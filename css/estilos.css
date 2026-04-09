@@ -1,0 +1,68 @@
+body{
+    background-color: #ece1be;
+    margin: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+
+}
+
+.logo{
+
+    display: flex;
+    align-items: center; 
+    position: center;
+/*     max-width: 600%;/* ancho */
+/*    max-height: 0; /* alto */ 
+}
+
+.Texto {
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+/* header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+} */
+img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    right:center;
+}
+
+
+/* 
+.IconoM {
+    max-width: 100%;
+    width: 340px;
+    margin-left: 900px;
+    background-color: transparent;
+    border: none;
+}
+.texto2 {
+    font-size: 25px;
+    color: #000000;
+    position: relative;
+    top: -190px;
+    right: 0;
+} */
+
+.ManchaA {
+    max-width: 100%;
+/*     width: 340px;
+    margin-left: 900px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 100px;
+    left: 0;
+    max-width: 100%;
+    height: auto; */
+}
+      
