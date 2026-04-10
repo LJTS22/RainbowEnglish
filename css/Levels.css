@@ -1,0 +1,53 @@
+body {
+    background-color: #f4e8e1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header {
+  display: flex;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  width: 1000px;
+  margin: 50px auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;  /* ← CAMBIA de row a column (apila verticalmente) */
+    background-color: #f7f0de;
+    align-items: center;      /* ← Centra horizontalmente */
+    justify-content: center;  /* ← Centra verticalmente */             /* ← Espacio entre el título y la flecha */
+    width: 600px;
+    margin: -20px auto;
+    padding: 60px;            /* ← Añade padding para mejor apariencia */
+}
+.cuadritos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.cuadritos div {
+  background-color: #ccc3c5;
+  border-radius: 10px;
+  height: 240px;
+  width: 240px;
+}
+p{
+    font-family: cursive;
+}
+.pLevels{
+font-size: 90px;
+}
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+

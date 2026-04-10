@@ -1,67 +1,128 @@
-body{
-    background-color: #ece1be;
-    margin: 15px;
-    height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4e8e1;
+    min-height: 100vh;
     display: flex;
-    justify-content: center; /* centra horizontal */
-    align-items: center;     /* centra vertical */
-/*     overflow: hidden;        /* quita scroll */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    position: relative;
 }
 
-.logo{
-
-    display: flex;
-    align-items: center; 
-    position: center;
-/*     max-width: 600%;/* ancho */
-/*    max-height: 0; /* alto */ 
-}
-
-.texto {
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-}
-/* header {
-    background-color: transparent;
-    padding: 20px;
+header {
     text-align: center;
-} */
-img {
     width: 100%;
-    margin: 0 auto;
-    max-width: 100%;
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+/* Logo */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    max-width: 120px;
+    width: 100%;
     height: auto;
-    right:center;
+    display: inline-block;
 }
 
+/* Texto "What do you learn today?" */
+.question-text {
+    font-size: 22px;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
 
-/* 
-.IconoM {
-    max-width: 100%;
-    width: 340px;
-    margin-left: 900px;
-    background-color: transparent;
+/* Botón de inicio */
+.start-button {
+    background: transparent;
     border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
 }
-.texto2 {
-    font-size: 25px;
+
+.start-button:hover {
+    transform: scale(1.05);
+}
+
+.star-icon {
+    width: 50px;
+    height: auto;
+}
+
+.start-text {
+    font-size: 24px;
+    font-weight: bold;
     color: #000000;
-    position: relative;
-    top: -190px;
-    right: 0;
-} */
-
-.ManchaA {
-    max-width: 100%;
-/*     width: 340px;
-    margin-left: 900px;
-    background-color: transparent;
-    border: none;
-    position: relative;
-    top: 100px;
-    left: 0;
-    max-width: 100%;
-    height: auto; */
+    letter-spacing: 1px;
 }
-      
+
+/* Estrella decorativa (EstrellaA) */
+.decorative-star {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.8;
+}
+
+.decorative-star img {
+    width: 60px;
+    height: auto;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+
+    .question-text {
+        font-size: 18px;
+    }
+    
+    .start-text {
+        font-size: 18px;
+    }
+    
+    .star-icon {
+        width: 35px;
+    }
+    
+    .logo-img {
+        max-width: 80px;
+    }
+    
+    .decorative-star img {
+        width: 40px;
+    }
+    
+    .decorative-star {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .question-text {
+        font-size: 16px;
+    }
+    
+    .start-text {
+        font-size: 14px;
+    }
+    
+    .star-icon {
+        width: 25px;
+    }
+}
