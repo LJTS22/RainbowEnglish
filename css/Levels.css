@@ -37,22 +37,6 @@ header {
 
 }
 p{
-    font-family: cursive;
-}
-.pLevels {
-font-size: 90px;
-}
-.number{
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background: #f0ecec;
-}
-button{
-    background-color: blueviolet;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -64,6 +48,31 @@ button{
     font-family: cursive;
     font-size: 20px;
     margin: 20px;
+
+}
+.pLevels {
+font-size: 90px;
+}
+.number{
+  font-size: 30px;
+  text-align: center;
+
+
+
+  background: #f0ecec;
+}
+button{
+  font-size: 30px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border: none;
+
 
 }
 

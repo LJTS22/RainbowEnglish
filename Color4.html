@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>   
+    <link rel="stylesheet" href="css/Color4.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="pLevels">What color is this?</p>
+        <div class="circulo">
+        </div>
+        </div>
+
+        </header>
+        <div class="cuadritos">
+            <div class="containerRojo">
+                <button class="colores">Red</button>
+            </div>
+            <div class="containerAzul">   
+                <button class="colores">Silver</button>
+            </div>
+        </div>
+
+<!-- NUEVO: Estructura del modal -->
+<div id="miModal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar-modal">&times;</span>
+        <h2 id="tituloModal">Your answer is correct! 😀</h2>
+        <p id="mensajeModal">Good job, keep it up!.</p>
+    </div>
+</div>    
+<script>
+    // ===============================
+    // 1. ELEMENTOS DEL DOM
+    // ===============================
+    const modal = document.getElementById("miModal");
+    const btnCerrar = document.getElementsByClassName("cerrar-modal")[0];
+    const botones = document.querySelectorAll(".colores");
+
+    const tituloModal = document.getElementById("tituloModal");
+    const mensajeModal = document.getElementById("mensajeModal");
+
+    // ===============================
+    // 2. CONFIGURACIÓN
+    // ===============================
+    const respuestaCorrecta = "Red";
+
+    // 👉 Ruta a la siguiente página
+    const siguientePagina = "RainbowEnglish/Finish.html"; // cámbialo por tu archivo real
+
+    // ===============================
+    // 3. VALIDAR RESPUESTAS
+    // ===============================
+    botones.forEach(boton => {
+        boton.addEventListener("click", function() {
+            const respuestaUsuario = boton.textContent;
+
+            if (respuestaUsuario === respuestaCorrecta) {
+                // ✅ CORRECTO
+                tituloModal.textContent = "Correct! 😀";
+                mensajeModal.textContent = "Good job, going to next level...";
+
+                modal.style.display = "block";
+
+                // ⏳ Espera 2 segundos y redirige
+                setTimeout(() => {
+                    window.location.href = siguientePagina;
+                }, 2000);
+
+            } else {
+                // ❌ INCORRECTO
+                tituloModal.textContent = "Incorrect ❌";
+                mensajeModal.textContent = "Try again.";
+
+                modal.style.display = "block";
+            }
+        });
+    });
+
+    // ===============================
+    // 4. CERRAR MODAL
+    // ===============================
+
+    btnCerrar.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    document.onkeydown = function(event) {
+        if (event.key === "Escape" && modal.style.display === "block") {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

@@ -7,11 +7,11 @@ body {
     overflow: hidden;
 }
 header {
-    display: flex;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    width: 1000px;
-    margin: 50px auto;
+  display: flex;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  width: 1000px;
+  margin: 50px auto;
 }
 .container{
     display: flex;
@@ -38,6 +38,7 @@ header {
 }
 p{
     font-family: cursive;
+
 }
 .pLevels {
 font-size: 90px;
@@ -52,7 +53,7 @@ font-size: 90px;
   background: #f0ecec;
 }
 button{
-    background-color: blueviolet;
+    background-color: #a06deb;
     border-radius: 10px;
     border: none;
     cursor: pointer;

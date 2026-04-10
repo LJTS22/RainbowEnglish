@@ -1,0 +1,44 @@
+body {
+    background-color: #f4e8e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    width: 120%;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-img{
+     background-image: url("Img/Logo.png");
+    align-items: center;
+    width: auto;
+    height: 500px;
+}
+p{
+    font-family: cursive;
+}
+.texto1{
+    font-size: 50px;
+    margin-top: -25px;
+}
+button, .star, a{
+    border: none;
+    margin-top: -120px;
+    margin-left: 195px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 380px;
+    height:280px;
+}
+.textoS{
+    margin-top: -240px;
+    font-size: 30px;
+    margin-left: 535px;
+}
